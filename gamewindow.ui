@@ -1,0 +1,1367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameWindow</class>
+ <widget class="QMainWindow" name="GameWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>860</width>
+    <height>615</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Kimochi Casino</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>860</width>
+      <height>590</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="startPage">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>220</y>
+        <width>361</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>BM Hanna 11yrs Old</family>
+        <pointsize>32</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Kimochi Casino</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="StartButton">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>389</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#StartButton{
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  color: #39739d;
+}
+
+QPushButton#StartButton:hover{
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+QPushButton#StartButton:pressed{
+  background-color: #98c6e3;
+  color: #2c5777;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>START</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="RuleButton">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>459</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#RuleButton{
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  color: #39739d;
+}
+
+QPushButton#RuleButton:hover{
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+QPushButton#RuleButton:pressed{
+  background-color: #98c6e3;
+  color: #2c5777;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>RULES</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="rulePage">
+     <widget class="QLabel" name="howtoplayLabel">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>10</y>
+        <width>201</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>17</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>How To Play</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="NextButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>529</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#NextButton{
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  color: #39739d;
+}
+
+QPushButton#NextButton:hover{
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+QPushButton#NextButton:pressed{
+  background-color: #98c6e3;
+  color: #2c5777;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>NEXT</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>53</y>
+        <width>821</width>
+        <height>561</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="cardValuesLable">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="basciExplanationLabel">
+         <property name="font">
+          <font>
+           <family>Arial Black</family>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+	color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;1.After betting, all players &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;receive two cards.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;2.Dealer shows top card.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;3.Dealer to draw additional &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;cards until the sum of the &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;cards is 17.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;4.Players may receive additional&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;cards (Hit) or not(Stand) as long&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;as the sum of the cards does not&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;exceed 21.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <zorder>howtoplayLabel</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>NextButton</zorder>
+    </widget>
+    <widget class="QWidget" name="gamePage">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(0, 80, 0);</string>
+     </property>
+     <widget class="QLabel" name="playerMoneyLabel">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>30</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{ 
+background-color: rgb(73, 125, 86);
+  border-radius: 3px;
+  border: 1px solid rgb(50, 85, 59);
+  color: rgb(0, 0, 0); }</string>
+      </property>
+      <property name="text">
+       <string>Player Money: $100</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="dealButton">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>390</y>
+        <width>65</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#dealButton{
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  color: #39739d;
+}
+
+QPushButton#dealButton:hover{
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+QPushButton#dealButton:pressed{
+  background-color: #98c6e3;
+  color: #2c5777;
+}
+
+QPushButton#dealButton:disabled{
+  background-color: rgb(80, 80, 80);
+  border-radius: 3px;
+  border: 1px solid rgb(80, 80, 80);
+  color: rgb(63, 63, 63);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>DEAL</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hitButton">
+      <property name="geometry">
+       <rect>
+        <x>719</x>
+        <y>346</y>
+        <width>65</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#hitButton{
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  color: #39739d;
+}
+
+QPushButton#hitButton:hover{
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+QPushButton#hitButton:pressed{
+  background-color: #98c6e3;
+  color: #2c5777;
+}
+
+QPushButton#hitButton:disabled{
+  background-color: rgb(80, 80, 80);
+  border-radius: 3px;
+  border: 1px solid rgb(80, 80, 80);
+  color: rgb(63, 63, 63);
+}</string>
+      </property>
+      <property name="text">
+       <string>HIT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="standButton">
+      <property name="geometry">
+       <rect>
+        <x>719</x>
+        <y>390</y>
+        <width>65</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#standButton{
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  color: #39739d;
+}
+
+QPushButton#standButton:hover{
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+QPushButton#standButton:pressed{
+  background-color: #98c6e3;
+  color: #2c5777;
+}
+
+QPushButton#standButton:disabled{
+  background-color: rgb(80, 80, 80);
+  border-radius: 3px;
+  border: 1px solid rgb(80, 80, 80);
+  color: rgb(63, 63, 63);
+}</string>
+      </property>
+      <property name="text">
+       <string>STAND</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="houseCard1">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>40</y>
+        <width>110</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/images/cardBack.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="playerCard1">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>400</y>
+        <width>110</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/images/cardBack.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="playerCard2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>400</y>
+        <width>110</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>playerCard2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="playerCard3">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>400</y>
+        <width>110</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>playerCard3</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="playerCard4">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>400</y>
+        <width>110</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>playerCard4</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="playerCard5">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>400</y>
+        <width>110</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>playerCard5</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="houseCard2">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>40</y>
+        <width>110</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>houseCard2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="betButton">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>345</y>
+        <width>65</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#betButton{
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  color: #39739d;
+}
+
+QPushButton#betButton:hover{
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+QPushButton#betButton:pressed{
+  background-color: #98c6e3;
+  color: #2c5777;
+}
+
+QPushButton#betButton:disabled{
+  background-color: rgb(80, 80, 80);
+  border-radius: 3px;
+  border: 1px solid rgb(80, 80, 80);
+  color: rgb(63, 63, 63);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>BET</string>
+      </property>
+     </widget>
+     <widget class="QTextBrowser" name="adviceBrowser">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>170</y>
+        <width>171</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextBrowser{ 
+background-color: rgb(73, 125, 86);
+  border-radius: 3px;
+  border: 1px solid rgb(50, 85, 59);
+  color: rgb(0, 0, 0); }</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:15pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;ADVICE: Your move was ---- . The move with a higher probability of winning is --- . &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="betAmountLabel">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>70</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{ 
+background-color: rgb(73, 125, 86);
+  border-radius: 3px;
+  border: 1px solid rgb(50, 85, 59);
+  color: rgb(0, 0, 0); }</string>
+      </property>
+      <property name="text">
+       <string>Bet Amount: $0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="houseCard3">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>40</y>
+        <width>110</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="houseCard4">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>40</y>
+        <width>110</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="houseCard5">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>40</y>
+        <width>110</width>
+        <height>140</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="WinAnimation" name="winWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>400</width>
+        <height>500</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="LoseAnimation" name="loseWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>50</y>
+        <width>400</width>
+        <height>500</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="blackJackAnimationLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>190</y>
+        <width>400</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{ background-color: transparent;}</string>
+      </property>
+      <property name="text">
+       <string>I'm a label for black jack</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="chipsLabel">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>70</y>
+        <width>201</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>I'm a label for chips image</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="gameOverLabel">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>85</y>
+        <width>400</width>
+        <height>400</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{ background-color: transparent;}</string>
+      </property>
+      <property name="text">
+       <string>I'm a label for GAME OVER</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="semiTranspGameOverLabel">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>90</y>
+        <width>400</width>
+        <height>400</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{ background-color: transparent;}</string>
+      </property>
+      <property name="text">
+       <string>Semi-transp</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="dificulltyCheckBox">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>300</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QCheckBox{ 
+background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  color: rgb(0, 0, 127); }
+
+QCheckBox:disabled{
+  background-color: rgb(80, 80, 80);
+  border-radius: 3px;
+  border: 1px solid rgb(80, 80, 80);
+  color: rgb(63, 63, 63);
+}</string>
+      </property>
+      <property name="text">
+       <string>Level II</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="doubleDownButton">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>480</y>
+        <width>130</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#doubleDownButton{
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  color: #39739d;
+}
+
+QPushButton#doubleDownButton:hover{
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+QPushButton#doubleDownButton:pressed{
+  background-color: #98c6e3;
+  color: #2c5777;
+}
+
+QPushButton#doubleDownButton:disabled{
+  background-color: rgb(80, 80, 80);
+  border-radius: 3px;
+  border: 1px solid rgb(80, 80, 80);
+  color: rgb(63, 63, 63);
+}</string>
+      </property>
+      <property name="text">
+       <string>DOUBLE DOWN</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="splitButton">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>440</y>
+        <width>130</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#splitButton{
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  color: #39739d;
+}
+
+QPushButton#splitButton:hover{
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+QPushButton#splitButton:pressed{
+  background-color: #98c6e3;
+  color: #2c5777;
+}
+
+QPushButton#splitButton:disabled{
+  background-color: rgb(80, 80, 80);
+  border-radius: 3px;
+  border: 1px solid rgb(80, 80, 80);
+  color: rgb(63, 63, 63);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>SPLIT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="showValuePlotButton">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>520</y>
+        <width>130</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#showValuePlotButton{
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  color: #39739d;
+}
+
+QPushButton#showValuePlotButton:hover{
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+QPushButton#showValuePlotButton:pressed{
+  background-color: #98c6e3;
+  color: #2c5777;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>SHOW VALUE PLOT</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{ 
+background-color: rgb(73, 125, 86);
+  border-radius: 3px;
+  border: 1px solid rgb(50, 85, 59);
+  color: rgb(0, 0, 0); }</string>
+      </property>
+      <property name="text">
+       <string>House Cards:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>460</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{ 
+background-color: rgb(73, 125, 86);
+  border-radius: 3px;
+  border: 1px solid rgb(50, 85, 59);
+  color: rgb(0, 0, 0); }</string>
+      </property>
+      <property name="text">
+       <string>Player Cards:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="splitLabel">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>330</y>
+        <width>411</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Split Deck! Deck Number: </string>
+      </property>
+     </widget>
+     <zorder>dificulltyCheckBox</zorder>
+     <zorder>semiTranspGameOverLabel</zorder>
+     <zorder>winWidget</zorder>
+     <zorder>loseWidget</zorder>
+     <zorder>playerMoneyLabel</zorder>
+     <zorder>dealButton</zorder>
+     <zorder>hitButton</zorder>
+     <zorder>standButton</zorder>
+     <zorder>playerCard5</zorder>
+     <zorder>houseCard2</zorder>
+     <zorder>betButton</zorder>
+     <zorder>adviceBrowser</zorder>
+     <zorder>playerCard4</zorder>
+     <zorder>playerCard3</zorder>
+     <zorder>playerCard2</zorder>
+     <zorder>playerCard1</zorder>
+     <zorder>houseCard1</zorder>
+     <zorder>houseCard3</zorder>
+     <zorder>houseCard4</zorder>
+     <zorder>houseCard5</zorder>
+     <zorder>blackJackAnimationLabel</zorder>
+     <zorder>chipsLabel</zorder>
+     <zorder>betAmountLabel</zorder>
+     <zorder>gameOverLabel</zorder>
+     <zorder>doubleDownButton</zorder>
+     <zorder>splitButton</zorder>
+     <zorder>showValuePlotButton</zorder>
+     <zorder>label_2</zorder>
+     <zorder>label_3</zorder>
+     <zorder>splitLabel</zorder>
+    </widget>
+    <widget class="QWidget" name="ruleDetailPage">
+     <widget class="QLabel" name="howtoplayLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>20</y>
+        <width>271</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial Black</family>
+        <pointsize>25</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	color: white;
+}</string>
+      </property>
+      <property name="text">
+       <string>How To Play</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>80</y>
+        <width>1308</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="blackJackLable">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+	color: white;
+	border: solid 10px grey;  
+	background-color: rgba(0, 0, 0, 100); 
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700; font-style:italic; text-decoration: underline;&quot;&gt;BlackJack&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;If the sum of the first two cards is 21, you will receive a payment of 1.5 times the bet.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="bustLable">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+	color: white;
+	border: solid 10px grey;  
+	background-color: rgba(0, 0, 0, 100); 
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700; font-style:italic; text-decoration: underline;&quot;&gt;Bust&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;If the sum of your cards exceeds 21, you will lose the bet.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="hitLable">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+	color: white;
+	border: solid 10px grey;  
+	background-color: rgba(0, 0, 0, 100); 
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700; font-style:italic; text-decoration: underline;&quot;&gt;Hit&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;This is when the player requests additional cards from the dealer in addition to the first two cards.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="standLable">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+	color: white;
+	border: solid 10px grey;  
+	background-color: rgba(0, 0, 0, 100); 
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700; font-style:italic; text-decoration: underline;&quot;&gt;Stand&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;If the player does not want an additional card, the dealer can not receive an additional card if the sum of the cards is greater than 17&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="splitLable">
+         <property name="font">
+          <font>
+           <pointsize>13</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+	color: white;
+	border: solid 10px grey;  
+	background-color: rgba(0, 0, 0, 100); 
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700; font-style:italic; text-decoration: underline;&quot;&gt;Split&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;If the first two cards received by the player are the same number, you can divide the two cards and bet on each.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="backtogameButton">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>30</y>
+        <width>121</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#backtogameButton{
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  color: #39739d;
+}
+
+QPushButton#backtogameButton:hover{
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+QPushButton#backtogameButton:pressed{
+  background-color: #98c6e3;
+  color: #2c5777;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Back To Game</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="gameStartButton">
+      <property name="geometry">
+       <rect>
+        <x>687</x>
+        <y>531</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#gameStartButton{
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  color: #39739d;
+}
+
+QPushButton#gameStartButton:hover{
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+QPushButton#gameStartButton:pressed{
+  background-color: #98c6e3;
+  color: #2c5777;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>GAME START</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="PreviousButton">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>531</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#PreviousButton{
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  color: #39739d;
+}
+
+QPushButton#PreviousButton:hover{
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+QPushButton#PreviousButton:pressed{
+  background-color: #98c6e3;
+  color: #2c5777;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>PREVIOUS</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>860</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <widget class="QMenu" name="menuGame_Menu">
+    <property name="title">
+     <string>Game Menu</string>
+    </property>
+    <addaction name="actionNew_Game"/>
+    <addaction name="actionGame_Rule"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuGame_Menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionGame_Rule">
+   <property name="text">
+    <string>Game Rule</string>
+   </property>
+  </action>
+  <action name="actionNew_Game">
+   <property name="text">
+    <string>New Game</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WinAnimation</class>
+   <extends>QWidget</extends>
+   <header>winanimation.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>LoseAnimation</class>
+   <extends>QWidget</extends>
+   <header>loseanimation.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
